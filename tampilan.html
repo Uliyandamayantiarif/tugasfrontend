@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Document </title>
+
+<style>
+
+.container {
+    width: 800px;
+    height: 1500px;
+    border: 2px solid lightskyblue;
+    margin:auto;
+    position: relative; 
+    top: 100px; 
+    background-color: aliceblue;  
+}
+
+.judul {
+    width: 800px;
+    height: 100px;
+    border: 1px solid rgb(0, 217, 255);
+    padding-left: 30px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.judul .judulatas {
+    font-size: 35px;
+    text-shadow: 3px 2px rgb(165, 1, 165);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu {
+    width: 800px;
+    height: 50px;    
+    border: 1px solid lightblue;
+    padding-top: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.menu a{
+    text-decoration: none;
+    color:rgb(250, 114, 232);
+}
+
+.menu a:hover{
+    background-color: lightskyblue;
+    color:white;
+}
+
+.banner {
+    background-color: beige;
+    width: 800px;
+    height: 300px;
+    background-image: url(banner.jpg);
+    background-size: cover;  
+}
+
+.ribbon {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background-image: url(ribbon.png);
+    left:690px;
+    top:-15px;
+}
+
+.judulartikel {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.konten {
+    width: 800px;
+    height: 400px;
+    padding: 20px 20px 20px 20px;
+    box-sizing: border-box;
+    background-color: rgba(137, 43, 226, 0.87);
+    overflow: auto;   
+}
+
+.konten img {
+    float: left;
+    padding: 20px 20px;
+}
+
+.kotak {
+    border-radius: 10px;
+    background-color: rgb(64, 93, 224);
+    margin: 5px 5px 5px 5px;
+    width: 190px;
+    height: 150px;
+    float: left;
+}
+
+.thumbnail {
+    border-radius: 5px;
+    width: 170px;
+    height: 60px;
+    margin: 10px auto;
+    background-color: violet;
+}
+
+.coverkata {
+    border-radius: 5px;
+    width: 250px;
+    height: 55px;
+    position: absolute;
+    left:10px;
+    top:30px;
+    background-color:lightpink;
+    opacity: 0.5;
+    border: 3px solid yellow;
+}
+
+.panel_mode {
+    width: 150px;
+    height: 100px;
+    background-color: rgb(49, 23, 73);
+    border-radius: 20px;
+    position: fixed;
+    left:1150px;
+}
+
+.klikkotak {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+}
+
+.klikkotak1 {
+    width: 200px;
+    height: 200px;
+    background-color:lightsalmon;
+}
+
+.klikkotak2 {
+    width: 200px;
+    height: 200px;
+    background-color: lightseagreen;
+}
+
+body{
+    background-color:#9975e0;
+}
+</style>
+</head>
+<body>
+
+    <script>
+
+        function ubahwarna_dark(){
+           document.getElementById('konten').style.backgroundColor="black";
+           document.getElementById('konten').style.color="white";
+        }
+        function ubahwarna_light(){    
+            document.getElementById('konten').style.backgroundColor="rgba(137, 43, 226, 0.87)";
+            document.getElementById('konten').style.color="black";
+        }
+        function divkelakuan(){
+            document.getElementById('cobaklik').className="klikkotak1";
+        }
+        function divkelakuan1(){
+            document.getElementById('cobaklik').className="klikkotak2";
+        }
+    
+    </script>
+    
+    <div class="panel_mode">
+<br>
+<center>
+        <button type="button" onclick="ubahwarna_dark()">Mode Malam Hari</button>
+        <br><br>
+        <button type="button" onclick="ubahwarna_light()">Mode Siang Hari</button>
+</center>
+    </div>
+    <div class="container">
+        <div class="coverkata"></div>
+        <div class="ribbon"></div>
+        <div class="judul">
+            <h1 class="judulatas">My Website</h1>
+        </div>
+        <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Profil</a>
+        <a href="#">Contact</a>
+        </div>
+
+        <div class="banner"></div>
+
+        <div class="judulartikel">
+        <h2>Judul Artikel</h2>
+        <p> Ditulis Oleh Uliyan Damayanti Arif</p>
+        </div>
+        <div id="konten" class="konten">
+        <img src="Logo UB.jpg">
+
+        <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum.
+        </p>
+        </div>
+        
+<br><br>
+<div class="kotakbesar">
+<div class="kotak"> 
+<div class="thumbnail"></div>
+<h2> Judul Berita</h2>
+<p>Ini adalah contoh berita <read more></p>
+</div>
+
+<div class="kotak"> 2 </div>
+<div class="kotak"> 3 </div>
+<div class="kotak"> 4 </div>
+<div class="kotak"> 5 </div>
+<div class="kotak"> 6 </div>
+<div class="kotak"> 7 </div>
+<div class="kotak"> 8 </div>
+</div>  
+</div>
+
+<div id="cobaklik" class="klikkotak" onmouseup="divkelakuan()" onmousedown="divkelakuan1()"></div>
+</body>
+</html>
